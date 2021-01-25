@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Εφαρμογή Καθηγητών - Αναζήτηση</title>
+    <script src="/TeachersWebApp/js/jquery.min.js"></script>
+    <script src="/TeachersWebApp/js/teachers.js"></script>
+    <link rel="stylesheet" href="/TeachersWebApp/css/style.css">
+</head>
+<body>
+    
+    <div class="find-teacher">
+        <p>Για αναζήτηση, δώστε το επίθετο εδώ:</p>
+        <form> 
+            <input id="searchInput" name = "lastname" type="text" placeholder="Επίθετο...">
+            <button  class="RightButton" type="button" onClick="fetchTeachersFromJSON()">Αναζήτηση</button>
+        </form>
+        
+    </div>
+
+    <h1>Λίστα καθηγητών</h1>
+    
+    	<table class="teachers-list">
+
+    	</table>
+    
+    
+</body>
+</html>
